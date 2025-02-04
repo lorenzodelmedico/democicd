@@ -1,6 +1,6 @@
 [project]
 name = "democicd"
-version = "0.1.1"
+version = "0.1.2"
 description = "A demonstration CI/CD pipeline project."
 readme = "README.md"
 requires-python = ">=3.8"
@@ -30,6 +30,8 @@ dependencies = [
   "typing_extensions==4.12.2"
 ]
 
+keywords = ["Fun", "Utile", "Best application","Gamechanging", "Amazing", "Mew", "Best functionnality", "Lorenzodelmedico"]
+
 [project.urls]
 "Homepage" = "https://github.com/lorenzodelmedico/democicd"
 "Repository" = "https://github.com/lorenzodelmedico/democicd"
@@ -37,19 +39,6 @@ dependencies = [
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-# Instruct setuptools to find packages inside the "src" folder.
-packages = ["democicd"]
-package-dir = { "" = "src" }
-
-[tool.setuptools.dynamic]
-version = { attr = "democicd.__version__" }
-# Alternatively, if you keep version hardcoded in pyproject.toml, you can remove dynamic entries.
-
-# ---------------------------
-# Tool configurations below
-# ---------------------------
 
 [tool.black]
 # Black configuration for code formatting.
@@ -71,7 +60,19 @@ exclude = '''
 )/
 '''
 
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/democicd"]
+
 [tool.pylint]
 # Basic configuration for pylint; you can add more rules as needed.
 max-line-length = 100
 # You can also use a pylintrc file if you prefer.
+
+
+[project.scripts]
+democicd = "democicd.main:main"

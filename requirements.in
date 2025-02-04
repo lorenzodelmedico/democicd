@@ -1,0 +1,8 @@
+#CICD
+
+#testing
+pytest
+
+#linter
+black
+pylint

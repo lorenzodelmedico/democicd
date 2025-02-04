@@ -1,4 +1,4 @@
-.PHONY: format lint test all
+.PHONY: format lint tests all
 
 # Format code using black and isort
 format:
@@ -10,7 +10,7 @@ lint:
 	pylint src test
 
 # Run tests using pytest
-test:
+tests:
 	pytest
 
 # Run all tasks: format, lint, and test

@@ -1,0 +1,2 @@
+[console_scripts]
+democicd = democicd.main:main

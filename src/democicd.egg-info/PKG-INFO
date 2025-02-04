@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: democicd
-Version: 0.1.1
+Version: 0.1.2
 Summary: A demonstration CI/CD pipeline project.
 Author-email: lorenzo del medico <lorenzodelmedico@gmail.com>
 License: MIT License
@@ -27,6 +27,7 @@ License: MIT License
 
 Project-URL: Homepage, https://github.com/lorenzodelmedico/democicd
 Project-URL: Repository, https://github.com/lorenzodelmedico/democicd
+Keywords: Fun,Utile,Best application,Gamechanging,Amazing,Mew,Best functionnality,Lorenzodelmedico
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
@@ -48,3 +49,34 @@ Requires-Dist: pytest==8.3.4
 Requires-Dist: tomli==2.2.1
 Requires-Dist: tomlkit==0.13.2
 Requires-Dist: typing_extensions==4.12.2
+
+# Exit Prompt Simulator 🎮🌀
+
+A Python CLI tool with probabilistic exits and terminal animations - because even quitting should be exciting!
+
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue?logo=python&logoColor=white)](https://python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+## Features ✨
+- 🎲 50/50 chance to flip your exit decision
+- 🌈 Colorful terminal animations
+- ⌛ Spinner progress indicators
+- ✅ Interactive confirmation prompts
+- 🛡️ Type-checked and linted code
+
+## Installation ⚙️
+```bash
+# Clone & setup
+git clone https://github.com/lorenzodelmedico/democicd.git
+cd democicd
+pip install -e .
+
+# Install pre-commit hooks (optional but recommended)
+pre-commit install
+
+#pip install
+pip install democicd
+
+#start script in cli
+democicd

@@ -8,9 +8,14 @@ import sys
 
 from democicd.cli import confirm_exit
 
-if __name__ == "__main__":
+
+def main():
     if confirm_exit():
         print("Exiting now.")
         sys.exit(0)
     else:
         print("Continuing execution.")
+
+
+if __name__ == "__main__":
+    main()

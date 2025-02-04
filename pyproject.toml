@@ -1,0 +1,60 @@
+[project]
+name = "democicd"
+version = "0.1.0"
+description = "A demonstration CI/CD pipeline project."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+    { name = "lorenzo del medico", email = "@gmail.com" }
+]
+# List any runtime dependencies your project needs:
+dependencies = [
+
+]
+
+[project.urls]
+"Homepage" = "https://github.com/lorenzodelmedico/democicd"
+"Repository" = "https://github.com/lorenzodelmedico/democicd"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# Instruct setuptools to find packages inside the "src" folder.
+packages = ["democicd"]
+package-dir = { "" = "src" }
+
+[tool.setuptools.dynamic]
+version = { attr = "democicd.__version__" }
+# Alternatively, if you keep version hardcoded in pyproject.toml, you can remove dynamic entries.
+
+# ---------------------------
+# Tool configurations below
+# ---------------------------
+
+[tool.black]
+# Black configuration for code formatting.
+line-length = 88
+target-version = ["py38"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.pylint]
+# Basic configuration for pylint; you can add more rules as needed.
+max-line-length = 100
+# You can also use a pylintrc file if you prefer.

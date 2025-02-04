@@ -16,3 +16,7 @@ data/
 #secrets
 
 credentials.json
+
+#distribution
+
+dist/

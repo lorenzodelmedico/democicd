@@ -5,7 +5,8 @@ This module provides the entry point for the application.
 """
 
 import sys
-from cli import confirm_exit
+
+from democicd.cli import confirm_exit
 
 if __name__ == "__main__":
     if confirm_exit():

@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+setup.py
+src/democicd/__init__.py
+src/democicd/cli.py
+src/democicd/main.py
+src/democicd.egg-info/PKG-INFO
+src/democicd.egg-info/SOURCES.txt
+src/democicd.egg-info/dependency_links.txt
+src/democicd.egg-info/requires.txt
+src/democicd.egg-info/top_level.txt

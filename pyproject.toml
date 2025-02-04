@@ -60,11 +60,6 @@ exclude = '''
 )/
 '''
 
-classifiers = [
-  "Development Status :: 4 - Beta",
-  "Programming Language :: Python"
-]
-
 [tool.hatch.build.targets.wheel]
 packages = ["src/democicd"]
 

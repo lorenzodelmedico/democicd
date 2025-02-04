@@ -24,7 +24,6 @@ def test_confirm_exit(monkeypatch):
     monkeypatch.setattr(time, "sleep", lambda seconds: None)
 
     # Import the function after patching to ensure patches take effect
-    # path must be written as democicd.cli because the application is deployed to pypi
     from democicd.cli import confirm_exit
 
     # Run the function; it should eventually return True (exit)

@@ -1,11 +1,11 @@
 .python-version
 
-#Fichier python 
-*.pyc 
+#Fichier python
+*.pyc
 *.pyo
 __pycache__/
 
-#Mac 
+#Mac
 
 .DS_Store
 
